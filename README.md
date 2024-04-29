@@ -161,7 +161,7 @@ char buffer[BUFSIZ + 1];
 int chars_read;
 
 memset(buffer, '\0', sizeof(buffer));
-
+    
 read_fp = popen("cat popen*.c | wc -l", "r");
 
 if (read_fp != NULL) {
